@@ -4,10 +4,11 @@
 %using relative ("name" + /) or absolute paths
 %					
 % When inserting images,in order to ensure a proper placement
-% use the environment \begin{figure} \end{figure}
-%
+% use the environment \begin{figure} [h] (h is to indicate exact positioning)
+%						\end{figure}
+%																	(usually width = \linewidth; rest of parameters empty)
 % To insert an image use the command 			\includegraphics[ width, length, scale]{imagefilename}within the figure environment
-%to write a note, use the /caption{text} command, the placement of this command determines where it appears. (i.e if its before \includegraphics[keyvals]{imagefile} it appears above the image )
+%to write a note, use the /caption{text} command, the placement of this command determines where it appears. (i.e if its before \includegraphics[keyvals]{imagefile} it appears above the image ) (must be used in the figure environment)
 %
 % TABLE TEMPLATE:
 %	
@@ -24,7 +25,7 @@
 %
 %		\hline
 %		
-%		cell7 & cell8 & cell9 \\  third line, 
+%		cell7 & cell8 & cell9  \\  third line, 
 %		\hline					add more for more lines
 %	\end{tabular}
 %\end{center}
